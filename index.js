@@ -1,3 +1,3 @@
 'use strict'
 
-module.exports = require('./lib/acl-api')
+module.exports = require('./lib/multi-acl')
