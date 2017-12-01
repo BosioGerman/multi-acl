@@ -1,0 +1,42 @@
+{
+  "name": "multi-acl",
+  "version": "0.0.1",
+  "description": "Simple multi-endpoint acl checker",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "standard",
+    "report": "nyc report --reporter=html",
+    "test": "npm run lint && nyc ava --verbose && npm run report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BosioGerman/multi-acl.git"
+  },
+  "keywords": [
+    "Acl",
+    "andpoint"
+  ],
+  "author": "German Bosio <bosiogerman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BosioGerman/multi-acl/issues"
+  },
+  "homepage": "https://github.com/BosioGerman/multi-acl#readme",
+  "ava": {
+    "files": [
+      "test/**-test.js"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "nyc": "^11.3.0",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "path-to-regexp": "^2.1.0"
+  }
+}
